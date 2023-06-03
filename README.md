@@ -1,6 +1,19 @@
 # autograded-assignment-template
 a template repo for an autograded assignment
 
+## Assignment Setup
+
+in `setup.sh`, at the bottom, there is are two  `TODO(you)`s:
+
+1. make sure you have deploy keys.
+   * the instructions for doing that are in `setup.sh` and in this `README.md` under [make a deploy key](#make-a-deploy-key)
+2. set your username and repository for the assignment-specific content
+   * change `your_username` to your GitHub username
+   * change `repository_for_assignment` to the name of your repo
+   * example: if my assignment repo is https://github.com/philipritchey/hello-world-autograder, then
+     * `username=philipritchey`
+     * `repository=hello-world-autograder`
+
 ## Gradescope Setup
 
 ### make a deploy key
