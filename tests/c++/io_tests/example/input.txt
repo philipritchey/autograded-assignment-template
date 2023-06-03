@@ -1,0 +1,1 @@
+whatever you put here is provided to the program under test on standard input
