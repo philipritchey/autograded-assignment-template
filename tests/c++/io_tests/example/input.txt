@@ -1,1 +1,1 @@
-13 whatever you put in this file is provided to the program under test on standard input
+13
