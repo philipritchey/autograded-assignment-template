@@ -1,0 +1,6 @@
+*.zip
+solution/
+.vscode
+results.json
+testbox/
+secrets/
