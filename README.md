@@ -3,9 +3,9 @@ a template repo for an autograded assignment
 
 ## Assignment Setup
 
-### setup.sh
+### customize the setup script: `setup.sh`
 
-There are two  `TODO(you)`s that you must do:
+There are two `TODO(you)`s that you must do:
 
 1. make sure you have deploy keys.
    * the instructions for doing that are in `setup.sh` and in this `README.md` under [make a deploy key](#make-a-deploy-key)
@@ -25,7 +25,7 @@ There is one `TODO?(you)` that you may need to do:
    * `python3.8` or later is required by `run_tests.py`
    * you can/should add any other dependencies that your tests need
 
-### run_autograder
+### customize the autograder script: `run_autograder`
 
 There are two  `TODO(you)`s that you must do:
 
@@ -42,14 +42,14 @@ There is one `TODO?(you)` that you may need to do:
    * a subset of them may have been given to the students in starter code, but it is not necessary
      * do not assume that files you include here are secret.  it may be possible for a clever student to access them.
 
-### ssh_config
+### [optional] customize the ssh configuration: `ssh_config`
 
 * you should not need to change anything, but you can if you need to (i.e. you know what you are doing)
 * make sure you have created both
   1. `deploy_key` for your assignment-specific repo
   2. `autograder_core_deploy_key` for your fork of the [autograder-core](https://github.com/philipritchey/autograder-core) repo 
 
-### tests/&lt;language&gt;
+### write some tests: `tests/<language>`
 
 the `<language>` must be either `c++` or `java`. i.e. `tests/c++` or `tests/java`.
 
@@ -104,4 +104,4 @@ if you don't have one, [get one](https://github.com/philipritchey/autograder-cor
 creates the file `autograder.zip`
 
 ### upload to gradescope
-Upload `autograder.zip` to Gradescope.
+upload `autograder.zip` to Gradescope.
