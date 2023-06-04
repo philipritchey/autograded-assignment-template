@@ -148,14 +148,10 @@ code.cpp
 @timeout: 30
 */
 <test>
-    auto start = std::chrono::steady_clock::now();
     size_t cnt = 1;
     for (unsigned n = 3; n < 2000000; n++) {
       if (is_prime(n)) cnt++;
     }
-    auto end = std::chrono::steady_clock::now();
-    auto microseconds = std::chrono::duration_cast<std::chrono::microseconds>(end - start).count();
-    std::cout << "operation took " << microseconds << " µs." << std::endl;
     std::cout << "  found " << cnt << " primes." << std::endl;
     EXPECT_EQ(cnt, 148933);
 </test>
@@ -173,28 +169,7 @@ code.cpp
 </test>
 
 /*
-@number: number
-@name: semantically invalid test
-@points: -F
-@type: type
-@target: target
-*/
-<test/>
-
-/*
-@skip: True
 @number: 8
-@name: skipped example
-@points: 1
-@show_output: True
-@type: script
-*/
-<test>
-  script_tests/example.sh
-</test>
-
-/*
-@number: 9
 @name: example with args
 @points: 1
 @show_output: True
