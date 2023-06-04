@@ -111,3 +111,9 @@ creates the file `autograder.zip`
 5. base image variant: JDK 17
 6. update autograder
 7. test autograder
+8. check settings
+   * dates, times
+   * submission methods
+   * ignored files
+   * container specifications
+   * timeout
