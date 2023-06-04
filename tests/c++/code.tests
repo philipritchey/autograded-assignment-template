@@ -48,7 +48,6 @@ code.h
 @points: 1
 @show_output: True
 @type: compile
-@target: code.cpp
 */
 <test>
 code_tests.cpp
