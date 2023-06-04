@@ -3,6 +3,19 @@ a template repo for an autograded assignment
 
 ## Assignment Setup
 
+### use this template
+
+1. click the button to use this template
+2. give your repo a descriptive name for your assignment
+3. keep the repo private
+4. clone your repo into the same directory as your fork of [autograder-core](https://github.com/philipritchey/autograder-core)
+   * e.g.
+     ```
+     user@machine:~/autograders/$ ls
+     autograder-core
+     hello-world-autograder
+     ```
+
 ### customize the setup script: `setup.sh`
 
 There are two `TODO(you)`s that you must do:
