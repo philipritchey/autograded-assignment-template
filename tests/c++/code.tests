@@ -97,19 +97,6 @@ code.cpp
 </test>
 
 /*
-@name: number is optional
-@points: 1
-@show_output: True
-@type: unit
-@target: code.cpp
-*/
-<test>
-    EXPECT_FALSE(is_prime(867));
-    EXPECT_TRUE(is_prime(5309));
-    EXPECT_TRUE(is_prime(8675309));
-</test>
-
-/*
 @number: 5.1
 @name: i/o example with output shown
 @points: 1
@@ -168,7 +155,7 @@ code.cpp
 
 /*
 @number: 8
-@name: example with args
+@name: script with args example
 @points: 1
 @show_output: True
 @type: script
