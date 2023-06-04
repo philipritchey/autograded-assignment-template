@@ -30,7 +30,7 @@ There is one `TODO?(you)` that you may need to do:
 There are two  `TODO(you)`s that you must do:
 
 1. define the expected language
-   * currently, the following languages are suppported:
+   * currently, the following languages are supported:
       * `c++`
       * `java`
 2. list the files that the student must submit
