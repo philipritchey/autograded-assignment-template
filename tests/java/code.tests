@@ -77,7 +77,7 @@ CodeTestRunner.java
 
 /*
 @number: 4.2
-@name: junit example
+@name: junit with hamcrest example
 @points: 1
 @show_output: True
 @type: unit
