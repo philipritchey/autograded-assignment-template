@@ -9,7 +9,7 @@ There are two  `TODO(you)`s that you must do:
 
 1. make sure you have deploy keys.
    * the instructions for doing that are in `setup.sh` and in this `README.md` under [make a deploy key](#make-a-deploy-key)
-   * :note: if your editor uses CRLF the deploy keys will not work. Ensure that your document is LF only.
+   * :warning: if your editor uses CRLF the deploy keys will not work. Ensure that your document is LF only.
 2. set your username and repository for the assignment-specific content
    * change `your_username` to your GitHub username
    * change `repository_for_assignment` to the name of your repo
