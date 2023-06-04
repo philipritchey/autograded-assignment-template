@@ -75,13 +75,12 @@ code.cpp
 @points: 1
 @show_output: True
 @type: coverage
-@target: code_tests.cpp
+@target: code.cpp
 @timeout: 30
 */
 <test>
   source: code.cpp
   main: code_tests.cpp
-  target: code.cpp
 </test>
 
 /*
