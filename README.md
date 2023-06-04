@@ -95,6 +95,7 @@ the `<language>` must be either `c++` or `java`. i.e. `tests/c++` or `tests/java
   * the actual organization of this folder is abritrary since paths are provided in the test specification
     * but, it is to your benefit to keep it well-organized
 * ⚠️ when running tests, the contents of the `submission`/`solution`, `provided`, and `tests` directories are copied into a directory named `testbox` (along with all other required files, e.g. from the core)
+  * only the required/expected files (as specified in `run_autograder`) from `provided` and `submission`/`solution` are copied.
   * then, all the `X.tests` files are concatenated into one file that lives at the root of `testbox`, e.g. `testbox/tests.cpp`
   * paths in your tests should be relative to the root of `testbox`
   * this might confuse your IDE, so don't panic if it says it can't find a reference.  when in doubt, test.
