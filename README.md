@@ -15,6 +15,7 @@ a template repo for an autograded assignment
      autograder-core
      hello-world-autograder
      ```
+5. go ahead and make `run_autograder` executable: `chmod u+x run_autograder`
 
 ### customize the setup script: `setup.sh`
 
@@ -99,6 +100,13 @@ the `<language>` must be either `c++` or `java`. i.e. `tests/c++` or `tests/java
   * then, all the `X.tests` files are concatenated into one file that lives at the root of `testbox`, e.g. `testbox/tests.cpp`
   * paths in your tests should be relative to the root of `testbox`
   * this might confuse your IDE, so don't panic if it says it can't find a reference.  when in doubt, test.
+
+### test your tests: `solution/`
+
+* you can write your own code to test your tests.
+* put your code in `solution/`
+  * the `solution/` directory is ignored per `.gitignore`.
+* when running tests locally, the autograder detects that it is not on gradescope and will pull the "submitted" code from `solution`.
 
 ### make a deploy key
 `ssh-keygen -t ed25519 -C "gradescope"`
