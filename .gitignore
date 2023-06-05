@@ -4,3 +4,4 @@ solution/
 results.json
 testbox/
 secrets/
+deploy_key.pub
