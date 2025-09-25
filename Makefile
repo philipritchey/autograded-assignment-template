@@ -19,5 +19,5 @@ deploy_key:
 	@mkdir -p secrets
 	@mv ./deploy_key ./secrets/deploy_key
 	@cp ../autograder-core/secrets/deploy_key ./secrets/autograder_core_deploy_key
-	@echo "The public key (to add the GitHub) is:"
+	@echo "The public key (to add to GitHub) is:"
 	@cat ./deploy_key.pub
