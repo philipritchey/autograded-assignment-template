@@ -1,15 +1,13 @@
-.PHONY: clean package check starter deploy_key check-git-uncommitted check-git-unpushed
+.PHONY: package check starter deploy_key check-git-uncommitted check-git-unpushed
 
-package: clean starter check-git-uncommitted check-git-unpushed
+package: starter check-git-uncommitted check-git-unpushed
 	@if [ ! -f secrets/autograder_core_deploy_key ] || [ ! -f secrets/deploy_key ]; then\
 		echo "Missing deploy keys.";\
 		echo "Run: make deploy_key";\
 		exit 1;\
 	fi
-	@zip -j autograder.zip secrets/autograder_core_deploy_key secrets/deploy_key run_autograder setup.sh ssh_config
-
-clean:
 	@rm -f autograder.zip
+	@zip -j autograder.zip secrets/autograder_core_deploy_key secrets/deploy_key run_autograder setup.sh ssh_config
 
 check:
 	@chmod u+x run_autograder
