@@ -11,18 +11,6 @@ cd /autograder/source
 mkdir -p /root/.ssh
 cp ssh_config /root/.ssh/config
 
-#
-# TODO(you)
-#
-# Make sure to include your private key here (as `deploy_key`)
-#   this is the deploy key for the assignment-specific repo
-#   how-to:
-#     $ ssh-keygen -t ed25519 -C "gradescope deploy key"
-#     save as ./deploy_key in assignment folder
-#     no passphrase
-#     $ mv ./deploy_key ./secrets/deploy_key
-#     add a new deploy key on github (Repo/Settings/Security/Deploy Keys)
-#       paste contents of ./deploy_key.pub
 mv deploy_key /root/.ssh/deploy_key
 chmod 600 /root/.ssh/deploy_key
 
