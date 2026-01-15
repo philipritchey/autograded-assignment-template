@@ -163,3 +163,15 @@ code.cpp
 <test>
   script_tests/example.sh -h
 </test>
+
+/*
+@number: 9
+@name: does not contain "using namespace std"
+@points: 0
+@show_output: True
+@type: script
+@timeout: 5
+*/
+<test>
+script_tests/detect_using_namespace_std.sh
+</test>
