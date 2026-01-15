@@ -6,6 +6,7 @@ package: starter check-git-uncommitted check-git-unpushed
 		echo "Run: make deploy_key";\
 		exit 1;\
 	fi
+	@echo "=== autograder.zip ==="
 	@rm -f autograder.zip
 	@zip -j autograder.zip secrets/autograder_core_deploy_key secrets/deploy_key run_autograder setup.sh ssh_config
 
@@ -15,6 +16,8 @@ check:
 
 starter:
 	@echo "[TODO?] update Makefile's starter rule"
+	@echo "=== starter.zip ==="
+	@rm -f starter.zip
 	@zip -j starter.zip starter/*.cpp starter/*.h
 
 deploy_key:
