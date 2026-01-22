@@ -1,7 +1,7 @@
 /*
-@number: 00
+@number: 0.0
 @name: approved includes for code.cpp
-@points: 1
+@points: 0
 @type: approved_includes
 @show_output: True
 @target: code.cpp
@@ -14,9 +14,9 @@ code.h
 </test>
 
 /*
-@number: 0
+@number: 0.0
 @name: approved includes for code.h
-@points: 1
+@points: 0
 @type: approved_includes
 @show_output: True
 @target: code.h
@@ -28,9 +28,9 @@ stdexcept
 </test>
 
 /*
-@number: 0
+@number: 0.0
 @name: approved includes for code_tests.cpp
-@points: 1
+@points: 0
 @type: approved_includes
 @show_output: True
 @target: code_tests.cpp
@@ -43,7 +43,19 @@ code.h
 </test>
 
 /*
-@number: 1
+@number: 0.1
+@name: does not contain "using namespace std"
+@points: 0
+@show_output: True
+@type: script
+@timeout: 5
+*/
+<test>
+script_tests/detect_using_namespace_std.sh
+</test>
+
+/*
+@number: 0.2
 @name: code compiles without errors or warnings
 @points: 1
 @show_output: True
@@ -164,14 +176,3 @@ code.cpp
   script_tests/example.sh -h
 </test>
 
-/*
-@number: 9
-@name: does not contain "using namespace std"
-@points: 0
-@show_output: True
-@type: script
-@timeout: 5
-*/
-<test>
-script_tests/detect_using_namespace_std.sh
-</test>
