@@ -21,10 +21,21 @@ starter:
 	@zip -j starter.zip starter/*.cpp starter/*.h
 
 deploy_key:
-	@ssh-keygen -t ed25519 -C "gradescope deploy key" -f ./deploy_key -N ""
 	@mkdir -p secrets
-	@mv ./deploy_key ./secrets/deploy_key
-	@cp ../autograder-core/secrets/deploy_key ./secrets/autograder_core_deploy_key
+	@if [ -f secrets/deploy_key ]; then \
+		echo "[WARN] ./secrets/deploy_key already exists."; \
+		echo "       not overwriting."; \
+	else \
+		ssh-keygen -t ed25519 -C "gradescope deploy key" -f ./deploy_key -N ""; \
+		mv ./deploy_key ./secrets/deploy_key; \
+	fi
+	@if [ ! -f ../autograder-core/secrets/deploy_key ]; then \
+		echo "[FATAL] autograder-core deploy key not found."; \
+		echo "        it should be in ../autograder-core/secrets/deploy_key"; \
+		exit 1; \
+	else \
+		cp ../autograder-core/secrets/deploy_key ./secrets/autograder_core_deploy_key; \
+	fi
 	@echo "The public key (to add to GitHub) is:"
 	@cat ./deploy_key.pub
 
