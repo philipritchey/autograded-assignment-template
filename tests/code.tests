@@ -48,7 +48,6 @@ code.h
 @points: 0
 @show_output: True
 @type: script
-@timeout: 5
 */
 <test>
 script_tests/detect_using_namespace_std.sh
