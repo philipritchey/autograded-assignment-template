@@ -36,3 +36,9 @@ ssh-keyscan -t rsa github.com >> ~/.ssh/known_hosts
 # Clone autograder files
 git clone git@assignment:$username/$repository.git /autograder/autograder-code
 git clone git@core:philipritchey/autograder-core.git /autograder/autograder-core
+
+# add unprivileged student user
+adduser student --no-create-home --disabled-password --gecos ""
+# remove student access to autograder code and core
+chmod o= /autograder/autograder-code
+chmod o= /autograder/autograder-core
